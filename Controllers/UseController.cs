@@ -38,6 +38,8 @@ namespace Shop.Controllers
 
             try
             {
+                model.Role = "employee";
+
                 context.Users.Add(model);
                 await context.SaveChangesAsync();
 
